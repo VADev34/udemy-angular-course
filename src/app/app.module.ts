@@ -11,11 +11,13 @@ import { ToastrModule } from 'ngx-toastr';
 
 import { NgxSpinnerModule } from "ngx-spinner";
 
-import { IgxButtonModule } from 'igniteui-angular';
+import { HomeComponent } from './home/home.component';
+import { RoleComponent } from './role/role.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RoleComponent,
   ],
   imports: [
     BrowserModule,
@@ -23,7 +25,7 @@ import { IgxButtonModule } from 'igniteui-angular';
     CommonModule,
     BrowserAnimationsModule,
     ToastrModule.forRoot({
-      timeOut: 4000,
+      timeOut: 3000,
       progressBar: true,
       easing: "ease-in",
       closeButton: false,
@@ -31,8 +33,7 @@ import { IgxButtonModule } from 'igniteui-angular';
       preventDuplicates: false,
       positionClass: "toast-bottom-left"
     }),
-    NgxSpinnerModule,
-    IgxButtonModule
+    NgxSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent],
