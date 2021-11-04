@@ -13,11 +13,17 @@ import { NgxSpinnerModule } from "ngx-spinner";
 
 import { HomeComponent } from './home/home.component';
 import { RoleComponent } from './role/role.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { IgxNavbarModule, IgxIconModule, IgxNavigationDrawerModule } from 'igniteui-angular';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     RoleComponent,
+    NavbarComponent,
+    SidebarComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,7 +39,10 @@ import { RoleComponent } from './role/role.component';
       preventDuplicates: false,
       positionClass: "toast-bottom-left"
     }),
-    NgxSpinnerModule
+    NgxSpinnerModule,
+    IgxNavbarModule,
+    IgxIconModule,
+    IgxNavigationDrawerModule
   ],
   providers: [],
   bootstrap: [AppComponent],
