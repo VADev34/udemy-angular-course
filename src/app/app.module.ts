@@ -23,7 +23,7 @@ import { IgxNavbarModule, IgxIconModule, IgxNavigationDrawerModule } from 'ignit
     AppComponent,
     RoleComponent,
     NavbarComponent,
-    SidebarComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
